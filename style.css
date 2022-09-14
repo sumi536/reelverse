@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Overpass", sans-serif !important;
+  background-color: #eaeaea;
+}
+
+.navbar {
+  background-color: rgba(225, 225, 225, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 99;
+}
+
+.carousel {
+  margin-top: 56px !important;
+}
+
+.movie {
+  height: 550px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window {
+  max-width: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(215, 244, 244, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
